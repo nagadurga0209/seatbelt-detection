@@ -1,0 +1,16 @@
+# Core detection stack
+ultralytics>=8.1.0          # YOLOv8 / YOLOv5 training & inference
+opencv-python>=4.8.0        # image I/O + CLAHE preprocessing
+numpy>=1.24.0
+
+# Dataset download (Roboflow Universe)
+roboflow>=1.1.0
+
+# Alerting
+twilio>=9.0.0
+
+# Config / secrets
+python-dotenv>=1.0.0
+
+# Notebook / plotting (optional, used by the Colab notebook)
+matplotlib>=3.7.0

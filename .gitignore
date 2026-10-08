@@ -1,0 +1,27 @@
+# --- Secrets ---
+.env
+*.key
+
+# --- Datasets & weights (large; not committed) ---
+data/seatbelt/
+data/seatbelt_clahe/
+*.pt
+!yolov8n.pt.placeholder
+weights/
+runs/
+outputs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,20 @@
+# YOLO dataset configuration (template).
+#
+# When you download a dataset with `python -m src.download_data`, Roboflow
+# ships its own data.yaml inside data/seatbelt/ — the training scripts use
+# that automatically. This top-level file is a fallback / reference.
+#
+# `path` is the dataset root; train/val/test are relative to it.
+# After CLAHE preprocessing, point `path` at data/seatbelt_clahe instead.
+
+path: ./seatbelt          # or ./seatbelt_clahe after preprocessing
+train: train/images
+val: valid/images
+test: test/images         # optional
+
+# Class names — EDIT these to match your downloaded dataset.
+# Also update SB_VIOLATION_CLASSES in src/config.py / .env so the alert
+# logic knows which class means "no seat belt".
+names:
+  0: no_seatbelt
+  1: seatbelt
